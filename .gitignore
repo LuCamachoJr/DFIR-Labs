@@ -1,0 +1,34 @@
+# Keep lab evidence & giant artifacts out of git
+evidence/
+*.raw
+*.mem
+*.dmp
+*.hiberfil*
+pagefile.sys
+
+# Disk images & containers
+*.E01
+*.aff4
+*.dd
+*.iso
+*.vmdk
+*.vhd*
+*.vhdx
+
+# Network captures (remove these lines if you plan to commit tiny sample pcaps)
+*.pcap
+*.pcapng
+
+# Archives & temps
+*.zip
+*.7z
+*.gz
+*.tar
+*.tgz
+
+# Editor/OS cruft
+.DS_Store
+Thumbs.db
+__pycache__/
+.vscode/
+.idea/
