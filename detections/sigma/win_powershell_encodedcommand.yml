@@ -1,0 +1,25 @@
+title: Windows PowerShell EncodedCommand Execution
+id: 00000000-0000-0000-0000-000000000001
+status: experimental
+description: Detects PowerShell launched with -enc / -encodedcommand
+author: Luis Camacho Jr.
+date: 2025/08/22
+tags:
+  - attack.t1059.001
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4688
+    NewProcessName|endswith: '\powershell.exe'
+    CommandLine|contains:
+      - ' -enc '
+      - ' -encodedcommand '
+  condition: selection
+fields:
+  - CommandLine
+  - ParentProcessName
+falsepositives:
+  - Admin scripts and EDR tools using encoded payloads
+level: medium
