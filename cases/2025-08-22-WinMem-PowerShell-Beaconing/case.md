@@ -54,6 +54,8 @@ index=zeek sourcetype=dns
 | eventstats avg(count) as avg stdev(count) as sd by src_ip query
 | where count > avg + 3*sd
 ```
+Saved search: [`beaconing_sweep.spl`](../../detections/splunk/beaconing_sweep.spl)
+
 Indicators of Compromise (IOCs)
 Type	Value	Note
 Domain	*.example-beacon.com	Lab C2 domain
@@ -89,3 +91,5 @@ User awareness; least privilege for endpoints
 Lessons Learned
 
 Correlating Volatility (host) with Zeek/RITA (network) accelerated containment. Having ready SPL/Sigma templates shortened triage and report turnaround.
+
+
