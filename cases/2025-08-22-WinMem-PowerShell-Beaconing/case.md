@@ -92,4 +92,10 @@ Lessons Learned
 
 Correlating Volatility (host) with Zeek/RITA (network) accelerated containment. Having ready SPL/Sigma templates shortened triage and report turnaround.
 
+---
+## References
+- MITRE ATT&CK T1059.001 – PowerShell
+- Splunk Search Reference – stats / eventstats
+- Volatility 3 Docs – Windows plugins
+- Zeek Docs – dns.log fields
 
