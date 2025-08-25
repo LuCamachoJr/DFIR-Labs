@@ -1,0 +1,5 @@
+(index=win OR index=windows) (EventCode=4688 OR EventID=4688)
+(Parent_Process_Name="*powershell*" OR ParentImage="*\\powershell.exe" OR parent_process_name="powershell*")
+| stats count min(_time) as firstSeen max(_time) as lastSeen by
+  Account_Name Parent_Process_Name ParentImage New_Process_Name CommandLine
+| sort - count
