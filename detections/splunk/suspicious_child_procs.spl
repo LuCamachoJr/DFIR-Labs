@@ -1,5 +1,9 @@
+# NOTE: adjust field names to your CIM mapping
+# e.g., ParentProcessName / ParentImage / Parent_Process_Name
+
 (index=win OR index=windows) (EventCode=4688 OR EventID=4688)
-(Parent_Process_Name="*powershell*" OR ParentImage="*\\powershell.exe" OR parent_process_name="powershell*")
+(ParentProcessName="*\\powershell.exe" OR ParentImage="*\\powershell.exe" OR Parent_Process_Name="*powershell*")
 | stats count min(_time) as firstSeen max(_time) as lastSeen by
-  Account_Name Parent_Process_Name ParentImage New_Process_Name CommandLine
+  Account_Name New_Process_Name CommandLine ParentProcessName ParentImage Parent_Process_Name
 | sort - count
+
