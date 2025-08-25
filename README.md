@@ -2,6 +2,15 @@
 
 Hands-on **Digital Forensics & Incident Response** investigations: memory, disk, and network forensics + detections. Built from weekly labs (HTB Sherlocks, Let’sDefend) in a home DFIR environment. Public artifacts use **synthetic/lab data only**.
 
+![SIEM: Splunk](https://img.shields.io/badge/SIEM-Splunk-informational)
+![Rules: Sigma](https://img.shields.io/badge/Rules-Sigma-informational)
+![Forensics: Volatility](https://img.shields.io/badge/Forensics-Volatility-informational)
+![Network: Zeek](https://img.shields.io/badge/Network-Zeek-informational)
+![License](https://img.shields.io/github/license/LuCamachoJr/DFIR-Labs)
+
+
+
+
 > Recruiters: open `cases/` for concise case notes, IOCs, and ATT&CK mapping.  
 > Featured: *Windows Memory Forensics — Suspicious PowerShell Beaconing* → [`report.pdf`](cases/2025-08-22-WinMem-PowerShell-Beaconing/report.pdf)
 
