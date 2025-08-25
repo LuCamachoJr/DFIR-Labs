@@ -55,6 +55,7 @@ index=zeek sourcetype=dns
 | where count > avg + 3*sd
 ```
 Saved search: [`beaconing_sweep.spl`](../../detections/splunk/beaconing_sweep.spl)
+Saved search: [suspicious_child_procs.spl](../../detections/splunk/suspicious_child_procs.spl)
 
 Indicators of Compromise (IOCs)
 Type	Value	Note
