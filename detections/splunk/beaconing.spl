@@ -1,0 +1,6 @@
+index=zeek sourcetype=dns
+| bin _time span=1m
+| stats count by src_ip, query, _time
+| eventstats avg(count) as avg stdev(count) as sd by src_ip query
+| where count > avg + 3*sd
+| sort - _time
