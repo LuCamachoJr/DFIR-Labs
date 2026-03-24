@@ -1,4 +1,4 @@
-\## Investigation objective
+## Investigation objective
 
 
 
@@ -6,7 +6,7 @@ Review Windows EVTX evidence with Chainsaw to identify the most meaningful suspi
 
 
 
-\## Final assessment at a glance
+## Final assessment at a glance
 
 
 
