@@ -19,3 +19,10 @@ Review Windows EVTX evidence using ForenSynth-AI, an analyst-support workflow th
 
 Chainsaw surfaced multiple notable detections across the Windows event logs, but not every detection carried the same investigative weight. The final triage focused on the strongest findings, validating context around each event to separate lower-priority activity from behavior that would merit analyst attention or escalation.
 
+
+## Tools Used
+
+- **ForenSynth-AI** — custom analyst-support workflow used to organize, summarize, and document investigation results
+- **Chainsaw** — Windows EVTX hunting and triage engine used within the workflow
+- **Sigma-based detections** — rules used to surface notable patterns and suspicious activity
+- **Manual log review / analyst validation** — used to verify context and support triage conclusions
